@@ -1,19 +1,23 @@
-This is a JSON Web Token challenge lab. Feel free to clone it or visit it at https://jwt-lab.herokuapp.com/
+This is a JSON Web Token challenge lab. 
 
-If you want to get it working on your own computer/server.
+Docker
+---
+```bash
+docker-compose build
+docker-compose up
+# visit localhost:3000 and wait for a while until boot up
+```
+--- 
 
 
-git clone https://github.com/h-a-c/jwt-lab
-
-sudo snap install ruby --classic
-
+For local:
+--- 
+```
+git clone https://github.com/kiliczsh/jwt-lab
+ruby -v
 cd jwt-lab
-
-bundle install 
-
+bundle install
+npm install
 rails db:migrate
-
 rails s
-
-
-You might have some issues with bundle install but nothing a google search can't help with.
+```
